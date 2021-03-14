@@ -1,11 +1,11 @@
 import pandas as pd
 
-sample_data = pd.read_csv('./sample-data/sample-data-for-update-sql-query.csv')
+sample_data = pd.read_csv('../sample-data/sample-data-for-update-sql-query.csv')
 
 table_name = input("Enter Table Name: ") 
 columns = list(sample_data.columns)
 
-sql_file = open("./output/update_query.sql", "w")
+sql_file = open("../output/update_query.sql", "w")
 
 for row_index, row in sample_data.iterrows():
     update_data = []
